@@ -226,7 +226,7 @@ html header nav ul li a.active {
 }
 
 .banner-2 {
-  background-image: url(../images/about-bg.png);
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;

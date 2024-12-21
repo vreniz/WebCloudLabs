@@ -7,6 +7,8 @@
     <title>Practica</title>
     <link rel="stylesheet" href="/src/assets/css/reset.css" />
     <link rel="stylesheet" href="/src/assets/css/estilos.css" />
+    <link rel="stylesheet" href="/src/assets/css/About_us_section.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -60,51 +62,49 @@
         </div>
       </div>
     </div>
-    <div class="banner-2">
-      <div class="image-2"></div>
-      <div class="iconos">
-        <div class="icon">
-          <div class="col">
-            <div class="servicios">
-              <img src="./src/assets/images/service-icon-01.png" alt="" />
-            </div>
-            <div class="texto">
-              <h4>Data Analysis</h4>
-              <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="servicios">
-              <img src="./src/assets/images/service-icon-03.png" alt="" />
-            </div>
-            <div class="texto">
-              <h4>Data Reporting</h4>
-              <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
-            </div>
-          </div>
+
+    
+    <div class="About_us">
+      <h1 data-aos="zoom-in">About Us</h1>
+      <!--member 1-->
+      <div class="member" data-aos="zoom-in">
+        <div class="member_content rtl">
+          <h1> Juan Campanella</h1>
+          <h2>BSc. Systems Engineering</h2>
+          <p>Profesional especializado en el diseño, desarrollo, implementación y mantenimiento de soluciones tecnológicas. Con sólidos conocimientos en programación, bases de datos, redes y sistemas operativos, su enfoque es optimizar procesos y garantizar la eficiencia tecnológica en las organizaciones. Destaca por su capacidad de análisis, resolución de problemas y adaptación a nuevas tecnologías. Su experiencia abarca áreas como desarrollo de software, ciberseguridad, inteligencia artificial y gestión de proyectos IT.</p>
         </div>
-        <div class="icon">
-          <div class="col">
-            <div class="servicios">
-              <img src="./src/assets/images/service-icon-02.png" alt="" />
-            </div>
-            <div class="texto">
-              <h4>Web Analytics</h4>
-              <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="servicios">
-              <img src="./src/assets/images/service-icon-04.png" alt="" />
-            </div>
-            <div class="texto">
-              <h4>SEO Suggestions</h4>
-              <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
-            </div>
-          </div>
+        <div class="member_image">
+          <img alt="Juan Campanella imagen" src="src/assets/images/juanCampanella.jpg">
         </div>
       </div>
+      
+      <!--member 2-->
+      <div class="member" data-aos="zoom-in">
+        <div class="member_image">
+          <img alt="Vanessa Fontalvo imagen" src="src/assets/images/vanessaFontalvo.jpg">
+        </div>
+        <div class="member_content">
+          <h1> Vanessa Fontalvo</h1>
+          <h2>BSc. Systems Engineering</h2>
+          <p>Profesional especializado en el diseño, desarrollo, implementación y mantenimiento de soluciones tecnológicas. Con sólidos conocimientos en programación, bases de datos, redes y sistemas operativos, su enfoque es optimizar procesos y garantizar la eficiencia tecnológica en las organizaciones. Destaca por su capacidad de análisis, resolución de problemas y adaptación a nuevas tecnologías. Su experiencia abarca áreas como desarrollo de software, ciberseguridad, inteligencia artificial y gestión de proyectos IT.</p>
+        </div>
+      </div>
+
+       <!--member 1-->
+       <div class="member" data-aos="zoom-in">
+        <div class="member_content rtl">
+          <h1> Daniel Mendoza</h1>
+          <h2>BSc. Systems Engineering</h2>
+          <p>Profesional especializado en el diseño, desarrollo, implementación y mantenimiento de soluciones tecnológicas. Con sólidos conocimientos en programación, bases de datos, redes y sistemas operativos, su enfoque es optimizar procesos y garantizar la eficiencia tecnológica en las organizaciones. Destaca por su capacidad de análisis, resolución de problemas y adaptación a nuevas tecnologías. Su experiencia abarca áreas como desarrollo de software, ciberseguridad, inteligencia artificial y gestión de proyectos IT.</p>
+        </div>
+        <div class="member_image">
+          <img alt="Daniel Mendoza imagen" src="src/assets/images/danielMendoza.jpeg">
+        </div>
+      </div>
+      
     </div>
+
+
     <div class="Contact">
       <div class="text-left">
         <h2>Feel Free To Send Us a Message About Your Website Needs</h2>
@@ -143,5 +143,11 @@
         </p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1000,
+      })
+    </script>
   </body>
 </html>
