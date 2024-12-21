@@ -22,7 +22,7 @@ img {
 }
 
 html header {
-  background: #fafafa;
+  background: #100D28;
   height: 80px !important;
   display: flex;
   justify-content: space-between;
@@ -45,7 +45,7 @@ html header div .logo h4 {
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #03a4ed;
+  color: #fff
 }
 
 .logo h4 span {
