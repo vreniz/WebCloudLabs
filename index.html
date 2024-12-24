@@ -7,141 +7,142 @@
     <title>Practica</title>
     <link rel="stylesheet" href="/src/assets/css/reset.css" />
     <link rel="stylesheet" href="/src/assets/css/estilos.css" />
+    <script src="./menu.js" defer></script> 
   </head>
   <body>
     <header>
       <div>
         <div class="logo">
-          <h4>WebCloud<span> Labs</span></h4>
+          <div class="menu-toggle">☰</div> <!-- Botón para abrir/cerrar el menú -->
+          <div class="logo">
+            <img src="./src/assets/images/logo_web.png" alt="Logo WebCloud Labs" class="logo-image" />
+            <h4>WebCloud<span> Labs</span></h4>
+          </div>
         </div>
       </div>
       <nav>
-        <ul>
-          <li><a href="#" class="active">About us</a></li>
-          <li><a href="#" class="active">Portfolio</a></li>
-          <li><a href="#" class="active">Plans</a></li>
+        <ul id="nav-menu">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Plans</a></li>
           <!--<li><a href="#">Blog</a></li>-->
          <!-- <li><a href="#">Message Us</a></li>-->
           <li><a href="#">Contact Now</a></li>
         </ul>
       </nav>
     </header>
-    <div class="main-banner">
-      <div class="container">
-        <div class="left-content">
-          <h6>Welcome to Frontend Development</h6>
-          <h2>
-            We Make <em>Digital Ideas</em> &amp; <span>SEO</span> Marketing
-          </h2>
+    <div class="main-content">
+      <div class="main-banner"> 
+        <div class="container">
+          <div class="left-content">
+            <h6>Transform Your Vision</h6>
+            <h2>
+              Into a <em>Stunning Website</em> <br /> with <span>WebCloud Labs</span> 
+            </h2>
+            <ul>
+              <li><span class="emoji">🚀</span> <strong>Cutting-edge designs</strong> designs that stand out.</li>
+              <li><span class="emoji">🌐</span> <strong>Responsive</strong> and user-friendly interfaces.</li>
+              <li><span class="emoji">⚡</span> <strong>Optimized</strong> for speed and performance.</li>
+              <li><span class="emoji">🎯</span> <strong>Tailored solutions</strong> for your business goals.</li>
+            </ul>
+            <h1 class="cus-message">
+              <span class="emoji">💻</span>
+              Let’s build together your digital success story today!
+              <a
+                rel="nofollow"
+                href="https://templatemo.com/page/1"
+                target="_parent"
+                >TemplateMo</a
+              >.
+            </h1>          
+          </div>
+          <div class="right-content">
+            <div class="styled-image"></div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="banner-2">
+        <div class="image-2"></div>
+        <div class="iconos">
+          <div class="icon">
+            <div class="col">
+              <div class="servicios">
+                <img src="./src/assets/images/service-icon-01.png" alt="" />
+              </div>
+              <div class="texto">
+                <h4>Data Analysis</h4>
+                <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="servicios">
+                <img src="./src/assets/images/service-icon-03.png" alt="" />
+              </div>
+              <div class="texto">
+                <h4>Data Reporting</h4>
+                <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+              </div>
+            </div>
+          </div>
+          <div class="icon">
+            <div class="col">
+              <div class="servicios">
+                <img src="./src/assets/images/service-icon-02.png" alt="" />
+              </div>
+              <div class="texto">
+                <h4>Web Analytics</h4>
+                <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="servicios">
+                <img src="./src/assets/images/service-icon-04.png" alt="" />
+              </div>
+              <div class="texto">
+                <h4>SEO Suggestions</h4>
+                <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Contact">
+        <div class="text-left">
+          <h2>Feel Free To Send Us a Message About Your Website Needs</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor incididunt ut labore et dolores</p>
+          <div class="phone">
+            <h4>For any enquiry, Call Us: <span><a href="#">010-020-0340</a></span></h4>
+          </div>
+        </div>
+        <div class="form">
+          <div class="formulario">
+            <div class="campos-1">
+              <input type="text" placeholder="Name">
+              <input type="text" placeholder="Surname">
+            </div>
+            <div class="campo-2">
+              <input type="text" placeholder="Your Email">
+            </div>
+            <div class="campo-3">
+              <input type="text" placeholder="Message">
+            </div>
+            <div class="boton">
+              <button type="submit">Send Message</button>
+            </div>
+          </div>
+          <div class="contact-decor"></div>
+        </div>
+      </div>
+      <footer>
+        <div class="text-footer">
           <p>
-            Frontend Development is a professional looking HTML template using a
-            Bootstrap 5 (beta 2). This CSS template is free for you provided by
-            <a
-              rel="nofollow"
-              href="https://templatemo.com/page/1"
-              target="_parent"
-              >TemplateMo</a
-            >.
+            © Copyright 2021 Space Dynamic Co. All Rights Reserved.
+            <br />Design:
+            <a rel="nofollow" href="https://templatemo.com">TemplateMo</a>
           </p>
-          <div>
-            <fieldset>
-              <input placeholder="Your website URL..." />
-            </fieldset>
-            <fieldset>
-              <button>Analyze Site</button>
-            </fieldset>
-          </div>
         </div>
-        <div class="right-content">
-          <img
-            src="./src/assets/images/banner-right-image.png"
-            alt="team meeting"
-          />
-        </div>
-      </div>
+      </footer>
     </div>
-    <div class="banner-2">
-      <div class="image-2"></div>
-      <div class="iconos">
-        <div class="icon">
-          <div class="col">
-            <div class="servicios">
-              <img src="./src/assets/images/service-icon-01.png" alt="" />
-            </div>
-            <div class="texto">
-              <h4>Data Analysis</h4>
-              <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="servicios">
-              <img src="./src/assets/images/service-icon-03.png" alt="" />
-            </div>
-            <div class="texto">
-              <h4>Data Reporting</h4>
-              <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
-            </div>
-          </div>
-        </div>
-        <div class="icon">
-          <div class="col">
-            <div class="servicios">
-              <img src="./src/assets/images/service-icon-02.png" alt="" />
-            </div>
-            <div class="texto">
-              <h4>Web Analytics</h4>
-              <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="servicios">
-              <img src="./src/assets/images/service-icon-04.png" alt="" />
-            </div>
-            <div class="texto">
-              <h4>SEO Suggestions</h4>
-              <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="Contact">
-      <div class="text-left">
-        <h2>Feel Free To Send Us a Message About Your Website Needs</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor incididunt ut labore et dolores</p>
-        <div class="phone">
-          <h4>For any enquiry, Call Us: <span><a href="#">010-020-0340</a></span></h4>
-          <!-- <img src="./src/assets/images/llamada-telefonica.png" alt="">  -->
-        </div>
-      </div>
-      <div class="form">
-        <div class="formulario">
-          <div class="campos-1">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Surname">
-          </div>
-          <div class="campo-2">
-            <input type="text" placeholder="Your Email">
-          </div>
-          <div class="campo-3">
-            <input type="text" placeholder="Message">
-          </div>
-          <div class="boton">
-            <button type="submit">Send Message</button>
-          </div>
-        </div>
-        <div class="contact-decor"></div>
-      </div>
-    </div>
-    <footer>
-      <div class="text-footer">
-        <p>
-          © Copyright 2021 Space Dynamic Co. All Rights Reserved.
-
-          <br />Design:
-          <a rel="nofollow" href="https://templatemo.com">TemplateMo</a>
-        </p>
-      </div>
-    </footer>
   </body>
 </html>

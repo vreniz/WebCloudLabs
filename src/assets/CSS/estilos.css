@@ -8,6 +8,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   background-color: #fff;
+  overflow-x: auto; /* Permitir desplazamiento horizontal */
 }
 
 p {
@@ -18,16 +19,28 @@ p {
 
 img {
   width: 100%;
-  overflow: hidden;
+  
 }
 
-html header {
+html header { /* color y ajustes barra de navegación */
   background: #100D28;
   height: 80px !important;
   display: flex;
   justify-content: space-between;
   box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.2);
 }
+.logo {
+  display: flex;
+  align-items: center; /* Alinea verticalmente */
+}
+
+.logo-image {
+  width: 50px; /* Ajusta el tamaño de la imagen según lo necesario */
+  height: auto;
+  margin-right: -4px; /* Añade espacio entre la imagen y el texto */
+
+}
+
 
 html header div:first-child {
   display: flex;
@@ -46,6 +59,7 @@ html header div .logo h4 {
   font-weight: 700;
   text-transform: uppercase;
   color: #fff
+  
 }
 
 .logo h4 span {
@@ -60,6 +74,8 @@ html header nav {
 
 html header nav ul {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 html header nav ul li {
@@ -71,6 +87,7 @@ html header nav ul li:last-child {
   padding-right: 10px;
   padding-left: 10px;
   border-radius: 50px;
+  transition: all 0.3s ease; /* Transición suave para los cambios */
 }
 
 html header nav ul li:last-child a {
@@ -78,27 +95,70 @@ html header nav ul li:last-child a {
   padding: 0px 20px;
   font-weight: 400;
 }
+/* Estilo hover para el botón "Contact Now" */
+html header nav ul li:last-child:hover {
+  background-color: #d63933; /* Color de fondo al pasar el cursor */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+}
+
+/* Estilo hover para el texto dentro del botón */
+html header nav ul li:last-child:hover a {
+  color: #fff; /* Mantén el texto blanco */
+}
 
 html header nav ul li a {
   font-weight: 500;
   font-size: 15px;
-  color: #2a2a2a;
+  color: #fff;
   text-transform: capitalize;
   height: 40px;
-  line-height: 40px;
+  line-height: 35px;
   border: transparent;
   letter-spacing: 1px;
   text-decoration: none;
+  margin-top: -5px; /* Esto subirá las letras */
+  transition: color 0.3s ease; /* Transición suave */
 }
 
 html header nav ul li a {
   color: #2a2a2a;
 }
 
-html header nav ul li a.active {
-  color: #fe3f40 !important;
+header nav ul li a:hover {
+  color: #fe3f40; /* Color naranja al pasar el cursor */
+}
+
+html header nav ul li a { /* letras navbar about us,plans ... */
+  color: #fff;
   opacity: 1;
 }
+
+/* Cambia a naranja al hacer clic y mantenerlo enfocado */
+header nav ul li a:focus {
+  color: #fe3f40;
+  /* Opcional: negrita para resaltar */
+}
+.styled-image {
+  background-image: url(../images/home3.png); /* Ruta de la imagen */
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain; /* Escalar la imagen para cubrir el contenedor */
+  width: 550px;
+  height: 545px;
+  margin-top: 50px;
+  overflow-x: auto; /* Permitir scroll horizontal */
+  white-space: nowrap; /* Prevenir que el contenido se ajuste a nuevas líneas */
+  flex-shrink: 0; /* Prevenir que la imagen se reduzca en pantallas pequeñas */
+}
+.right-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible; /* Evitar recortes */
+  flex-shrink: 0; /* Evitar que se reduzca su tamaño en pantallas pequeñas */
+  min-width: 550px; /* Asegurar que no sea más pequeño que la imagen */
+}
+
 
 .main-banner {
   background-repeat: no-repeat;
@@ -106,7 +166,9 @@ html header nav ul li a.active {
   background-size: cover;
   padding: 100px 0px 120px 180px;
   position: relative;
-  overflow: hidden;
+  min-width: 100vw; /* Forzar que abarque al menos el ancho de la ventana */
+  overflow-x: auto; /* Permitir desplazamiento horizontal */
+  overflow-y: hidden; /* Opcional: evitar scroll vertical innecesario */
 }
 
 .main-banner:after {
@@ -124,12 +186,15 @@ html header nav ul li a.active {
 .main-banner:before {
   content: "";
   background-image: url(../images/baner-dec-right.png);
+  background-size: 160px 300px;
   background-repeat: no-repeat;
   position: absolute;
-  right: 0;
+  right: -20px;
   top: 0px;
-  width: 90px;
-  height: 290px;
+  width: 350px;
+  height: 305px;
+  z-index: 1; /* Asegura que esté encima del contenido pero detrás de otros elementos */
+  pointer-events: none; /* Asegura que no interfiera con la interacción */
 }
 
 .main-banner .container {
@@ -137,12 +202,49 @@ html header nav ul li a.active {
   justify-content: space-evenly;
   flex-direction: row;
   width: 100%;
+  position: relative; /* Asegura que el contenido respete su espacio */
+  z-index: 2; /* Por encima del pseudo-elemento */
 }
 
 .main-banner .container .left-content {
   margin-right: 50px;
   margin-top: 100px;
   width: min-content;
+}
+.main-banner .left-content ul {
+  margin: 20px 0 20px; /* Aumenta el margen superior para mayor separación del listado con el title*/
+  padding: 0;
+  list-style: none;
+}
+.main-banner .left-content ul li {
+  margin-bottom: 15px; /* Ajusta este valor para mayor o menor separación entre los elements lista */
+}
+.main-banner .left-content ul li .emoji {
+  font-size: 24px; /* Cambia este valor para ajustar el tamaño de los emojis*/
+}
+ul li strong {
+  font-weight: bold;
+  color: #2a2a2a; /* Mantén el mismo color del texto para coherencia */
+}
+.cus-message {
+  margin-top: 15px; 
+  font-size: 15px; /* Aumentar el tamaño del texto */
+  font-weight: bold; /* Negrita */
+  line-height: 1.6; /* Espaciado entre líneas */
+  display: flex; /* Usar flexbox para organizar el emoji y el texto */
+  align-items: center; /* Alineación vertical */
+  white-space: nowrap; /* Evita que el texto se divida en líneas */
+  flex-wrap: nowrap; /* Fuerza todo a mantenerse en una línea */
+}
+.cus-message a {
+  margin-left: 5px; /* Espacio entre el texto y el enlace */
+  color: blue; /* Color del enlace */
+  text-decoration: underline; /* Subrayado */
+}
+
+.cus-message .emoji {
+  font-size: 30px; /* Tamaño del emoji */
+  margin-right: 10px; /* Separar el emoji del texto */
 }
 
 .main-banner .container .left-content h6 {
@@ -237,7 +339,7 @@ html header nav ul li a.active {
   width: 100%;
   height: 90vh;
 }
-
+/* 
 .image-2 {
   background-image: url(../images/about-left-image.png);
   background-repeat: no-repeat;
@@ -247,7 +349,7 @@ html header nav ul li a.active {
   margin-right: 0px;
   width: 470px;
   height: 400px;
-}
+}*/
 
 .iconos {
   margin-top: 100px;
@@ -483,4 +585,4 @@ footer p {
 footer div p a {
   color: #fe3f40;
   text-decoration: none;
-}
+}  
