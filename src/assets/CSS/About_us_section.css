@@ -1,4 +1,4 @@
-
+/* Estilos generales */
 .About_us {
     display: flex;
     flex-wrap: wrap;
@@ -8,15 +8,17 @@
     gap: 50px;
     padding-left: 70px;
     font-family: Helvetica;
-}
-
-.About_us h1{
+  }
+  
+  .About_us h1 {
     color: white;
     font-size: 3rem;
     padding-top: 80px;
-}
-
-.member {
+    width: 100%;
+  }
+  
+  /* Miembro */
+  .member {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -24,47 +26,126 @@
     background-color: #100D28;
     padding: 40px;
     padding-right: 85px;
-}
-
-
-.member_content {
+    gap: 20px;
+  }
+  
+  .member_content {
     flex: 1;
-    align-content:center;
+    align-content: center;
     padding-right: 30px;
     padding-left: 25px;
-}
-
-.member_content h1 {
+  }
+  
+  .member_content h1 {
     font-size: 2rem;
     color: white;
-}
-
-
-.rtl {
+  }
+  
+  .rtl {
     direction: rtl;
     text-align: right;
-}
-
-.member_content h2 {
+  }
+  
+  .member_content h2 {
     font-size: 1rem;
     color: #6d6d6d;
     margin-bottom: 10px;
-}
-
-.member_content p{
+  }
+  
+  .member_content p {
     font-size: 1rem;
     color: #b0b0b0;
     line-height: 1.5;
     margin-top: 15px;
-}
-
-.member_image {
+  }
+  
+  .member_image {
     margin-right: 20px;
-}
-
-.member_image img {
+  }
+  
+  .member_image img {
     border-radius: 0%;
     width: 300px;
     height: 400px;
     object-fit: cover;
-}
+  }
+  
+  /* Media Queries */
+  
+  /* Tablets y pantallas medianas */
+  @media (max-width: 1024px) {
+    .member {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      padding-right: 30px;
+    }
+  
+    .member_image {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .member_image img {
+      width: 250px;
+      height: 350px;
+    }
+  
+    .About_us h1 {
+      text-align: center;
+    }
+  }
+  
+  /* Móviles grandes */
+  @media (max-width: 768px) {
+    .member {
+      padding: 20px;
+    }
+  
+    .member_content {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .member_content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .member_content h2 {
+      font-size: 0.9rem;
+    }
+  
+    .member_content p {
+      font-size: 0.9rem;
+    }
+  
+    .member_image img {
+      width: 200px;
+      height: 300px;
+    }
+  }
+  
+  /* Móviles pequeños */
+  @media (max-width: 480px) {
+    .About_us {
+      padding-left: 20px;
+      gap: 30px;
+    }
+  
+    .About_us h1 {
+      font-size: 2rem;
+    }
+  
+    .member_content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .member_content p {
+      font-size: 0.85rem;
+    }
+  
+    .member_image img {
+      width: 180px;
+      height: 260px;
+    }
+  }

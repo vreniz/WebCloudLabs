@@ -1,0 +1,179 @@
+
+/* Contenedor principal */
+.contenedor_price {
+    background-color: #100D28;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Texto dentro de contenedor_price */
+.contenedor_price p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+/* Texto para entrega */
+.price_delivery h3, .price_revisions h3{
+   font-size: 12px;
+   color: white;
+   padding-right: 10%;
+}
+
+
+/* Listas dentro de contenedor_price */
+.contenedor_price li {
+    list-style-type: disc;
+    padding-left: 20px;
+    padding-top: 6%;
+    text-align: left;
+}
+
+/* Subtítulo */
+.subtitle {
+    font-size:45px;
+    padding-left: 55px;
+    padding-top: 80px;
+    color: white;
+}
+
+/* Tablas de precios */
+.price {
+    text-align: center;
+}
+
+.price__table {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 50px;
+   
+}
+
+/* Elementos básicos de precios */
+.price__elements, .price__elements--best, .price__elements---best {
+    line-height: 1.4; /* Espaciado ajustado */
+    background-color: #3D8040;
+    text-align: center;
+    border-radius: 27px;
+    width: 300px; /* Reducir ancho */
+    padding: 20px; /* Reducir padding */
+    --color-plan: #FFFFFF;
+    --color-price: #FFFFFF;
+    --bg-cta: #fff;
+    --color-cta: #5454D4;
+    --color-items: #1f5722;
+}
+
+/* Nombre del plan */
+.price__name {
+    color: var(--color-plan);
+    margin-bottom: 15px;
+    font-weight: 650;/* Tamaño reducido */
+    padding-right: 60%;
+}
+
+/* Precio del plan */
+.price__price {
+    font-size: 1.5rem; /* Tamaño reducido */
+    color: var(--color-price);
+    padding-left: 50%;
+    margin-top: -17%;
+}
+
+/* Texto de características */
+.price__features, .price_resume p {
+    font-size: 0.8rem; /* Reducir texto descriptivo */
+}
+
+/* Ítems de características */
+.price__items {
+    margin-top: 20px; /* Reducir margen */
+    gap: 0.5em;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: var(--color-items);
+}
+
+/* Resumen de precio */
+.price_resume {
+    flex-direction: row;
+    display: flex;
+    gap: 5px; /* Reducir espacio */
+    align-items: center;
+    padding-left: 15%;
+    padding-top: 10%;
+}
+
+/* Iconos dentro del resumen */
+.price_resume img {
+    width: 15px;
+    height: 15px; /* Reducir tamaño de iconos */
+    filter: invert(1) brightness(2);
+}
+
+/* Tiempo de entrega y revisiones */
+.price_delivery, .price_revisions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 5%; /* Reducir espacio inferior */
+}
+
+/* Botones de CTA */
+.cta-best, .cta--best, .cta---best {
+    display: block;
+    background-color: #255027;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px; 
+    border-radius: 27px;
+    width: 250px; 
+    font-size: 0.8rem;
+}
+
+/* Listas dentro de CTA */
+.cta-best li, .cta--best li, .cta---best li {
+    font-size: 0.8rem; 
+    line-height: 0.6;
+    margin: 5px 0; 
+    padding-left: 30px; /* Espacio para el icono */
+    position: relative; /* Necesario para ::before */
+    list-style-type: none;
+}
+
+.cta-best li::before, .cta--best li::before, .cta---best li::before {
+    content: '✔'; /* Símbolo de verificación */
+    color: white; /* Cambia el color si es necesario */
+    font-weight: bold;
+    position: absolute;
+    left: 10px; /* Alineación del icono */
+}
+
+/* Mejor plan (Premium) */
+.price__elements--best {
+    background-color: #5454D4;
+}
+
+.cta--best{
+    background-color: #3c3ce2 ;
+}
+
+.price__elements---best {
+    background-color: #C5A73B;
+    --color-plan: #ffffff;
+    --color-price: #ffffff;
+    --color-items: #696871;
+}
+
+.cta---best {
+    background-color: #8B7E28;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    width: 250px;
+    font-size: 0.8rem;
+}

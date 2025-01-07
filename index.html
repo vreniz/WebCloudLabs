@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practica</title>
     <link rel="stylesheet" href="/src/assets/css/reset.css" />
-    <link rel="stylesheet" href="/src/assets/css/estilos.css" />
+    
     <link rel="stylesheet" href="/src/assets/css/About_us_section.css" />
     <link rel="stylesheet" href="/src/assets/css/Portfolio.css" />
+    <link rel="stylesheet" href="/src/assets/css/Plans.css" />
+    <link rel="stylesheet" href="/src/assets/css/Footer.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
@@ -65,7 +67,7 @@
     </div>
 
     
-    <div class="About_us">
+    <section class="About_us">
       <h1 data-aos="zoom-in">About Us</h1>
       <!--member 1-->
       <div class="member" data-aos="zoom-in">
@@ -102,71 +104,171 @@
           <img alt="Daniel Mendoza imagen" src="src/assets/images/danielMendoza.jpeg">
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="Portfolio">
-      <div class="proyecto">
-        <div class="py1">
-          <h1>ExploARQ23</h1>
-          <p>"ExplorARQ Barrio Abajo" es una plataforma que mapea la riqueza arquitectónica del Barrio Abajo en Barranquilla...</p>
+    <section class="Portfolio">
+      <div class="intro-container">
+        <h1 data-aos="zoom-in">Portfolio</h1> 
+        <p data-aos="zoom-in" class="intro-portfolio">
+        Our Portfolio reflects solutions designed with <span class="highlight">dedication</span>, creativity, and innovation. Each project represents our approach to understanding needs and transforming them into digital tools that deliver tangible results.
+      </p>
+      </div>
+      <div class="gallery">
+        <div class="thumbnail" id="project1">
+          <img src="src/assets/images/GuideCO.jpg" alt="Project 1">
+          <div class="project-details">
+            <h3>GuideCO | <span class="italic">Directed by: Juan Campanella</span></h3>
+            <h4>Description</h4>
+            <p>A comprehensive project management application designed to streamline workflows and enhance team productivity.</p>
+          </div>
+        </div>
+        <div class="thumbnail" id="project2">
+          <img src="src/assets/images/paginas_web.jpg" alt="Project 2">
+          <div class="project-details">
+            <h3>Hotel | <span class="italic">Directed by: Daniel Mendoza</span></h3>
+            <h4>Description</h4>
+            <p>A user-friendly hotel booking website offering seamless reservations and a delightful user experience.</p>
+          </div>
+        </div>
+        <div class="thumbnail" id="project3">
+          <img src="src/assets/images/ExploArq23.png" alt="Project 3">
+          <div class="project-details">
+            <h3>ExploARQ23 | <span class="italic">Directed by: Vanessa Fontalvo</span></h3>
+            <h4>Description</h4>
+            <p>ExplorARQ Barrio Abajo is a platform that preserves architectural heritage, offering an interactive map and 3D models to explore iconic buildings with historical and cultural insights.</p>
+          </div>
         </div>
       </div>
     
-      <div class="proyecto">
-        <div>
-          <img src="src/assets/images/ExplorArq23.png" alt="ExploARQ23">
-        </div>
-        <div class="py1">
-          <h1>ExploARQ23</h1>
-          <p>"ExplorARQ Barrio Abajo" es una plataforma que mapea la riqueza arquitectónica del Barrio Abajo en Barranquilla...</p>
-          <h2>"Dirigido por Vanessa Fontalvo."</h2>
-        </div>
-      </div>
-    </div>
-    
-    <div class="Contact">
-      <div class="text-left">
-        <h2>Feel Free To Send Us a Message About Your Website Needs</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor incididunt ut labore et dolores</p>
-        <div class="phone">
-          <h4>For any enquiry, Call Us: <span><a href="#">010-020-0340</a></span></h4>
-          <!-- <img src="./src/assets/images/llamada-telefonica.png" alt="">  -->
-        </div>
-      </div>
-      <div class="form">
-        <div class="formulario">
-          <div class="campos-1">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Surname">
-          </div>
-          <div class="campo-2">
-            <input type="text" placeholder="Your Email">
-          </div>
-          <div class="campo-3">
-            <input type="text" placeholder="Message">
-          </div>
-          <div class="boton">
-            <button type="submit">Send Message</button>
-          </div>
-        </div>
-        <div class="contact-decor"></div>
-      </div>
-    </div>
-    <footer>
-      <div class="text-footer">
-        <p>
-          © Copyright 2021 Space Dynamic Co. All Rights Reserved.
+    </section>
 
-          <br />Design:
-          <a rel="nofollow" href="https://templatemo.com">TemplateMo</a>
-        </p>
+  <section class="contenedor_price">
+    <h2 class="subtitle" data-aos="zoom-in">Plans</h2>
+
+    <div class="price__table" data-aos="zoom-in">
+      <div class="price__elements">
+        <p class="price__name">Basic</p>
+        <h3 class="price__price">80 US$</h3>
+
+        <div class="price__items">
+          <p class="price__features">Static web page made in HTML, CSS and JavaScript, based on the design required by
+            the client.</p>
+        </div>
+
+        <div class="price_resume">
+          <div class="price_delivery">
+            <img src="/src/assets/images/time.svg" alt="imageIcons" style="width: 20px; height: 20px;">
+            <h3 class="delivery"> 5 day delivery</h3>
+          </div>
+          <div class="price_revisions">
+            <img src="/src/assets/images/loading.svg" alt="imageIcons" style="width: 20px; height: 20px;">
+            <h3 class="delivery"> Unlimited revisions</h3>
+          </div>
+        </div>
+
+        <div class="cta-best">
+          <li>1 Page</li>
+          <li>Design Customization</li>
+          <li>Responsive Design</li>
+          <li>Speed Optimization</li>
+          <li>Social Media Icons</li>
+        </div>
       </div>
-    </footer>
+
+      <div class="price__elements--best">
+        <p class="price__name">Standard</p>
+        <h3 class="price__price">160 US$</h3>
+
+        <div class="price__items">
+          <p class="price__features">Basic Website + 3 pages + contend loading + additional complements.</p>
+        </div>
+
+        <div class="price_resume">
+          <div class="price_delivery">
+            <img src="/src/assets/images/time.svg" alt="imageIcons" style="width: 20px; height: 20px;">
+            <h3 class="delivery"> 5 day delivery</h3>
+          </div>
+          <div class="price_revisions">
+            <img src="/src/assets/images/loading.svg" alt="imageIcons" style="width: 20px; height: 20px;">
+            <h3 class="delivery"> Unlimited revisions</h3>
+          </div>
+        </div>
+
+        <div class="cta--best">
+          <li>3 Pages</li>
+          <li>Design Customization</li>
+          <li>Responsive Design</li>
+          <li>Speed Optimization</li>
+          <li>Social Media Icons</li>
+        </div>
+      </div>
+
+      <div class="price__elements---best">
+        <p class="price__name">Premium</p>
+        <h3 class="price__price">320 US$</h3>
+
+        <div class="price__items">
+          <p class="price__features">Standard Website including the development Website in React with NodeJS + SO +
+            Tutorial Video.</p>
+        </div>
+
+        <div class="price_resume">
+          <div class="price_delivery">
+            <img src="/src/assets/images/time.svg" alt="imageIcons" style="width: 20px; height: 20px;">
+            <h3 class="delivery"> 5 day delivery</h3>
+          </div>
+          <div class="price_revisions">
+            <img src="/src/assets/images/loading.svg" alt="imageIcons" style="width: 20px; height: 20px;">
+            <h3 class="delivery"> Unlimited revisions</h3>
+          </div>
+        </div>
+
+        <div class="cta---best">
+            <li>5 Pages</li>
+            <li>Design Customization</li>
+            <li>Responsive Design</li>
+            <li>Speed Optimization</li>
+            <li>Social Media Icons</li>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href="#">
+            <img src="src/assets/images/WEBCLOUD.png" alt="Logo de SLee Dw">
+          </a>
+        </figure>
+      </div>
+      <div class="boxs">
+        <div class="aboutUs">
+          <h2>About Us</h2>
+        </div>
+        <div class="ds"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim leo, pulvinar vitae arcu et, commodo tempus dolor. Duis sagittis nunc urna, eu dignissim nulla porttitor sit amet. Pellentesque a faucibus turpis. Phasellus in quam ac sem vestibulum fringilla at eu diam.</p>
+      </div>
+      <div class="box">
+        <h2>Follow Us</h2>
+        <div class="red-social">
+          <img src="src/assets/images/instagram.svg" alt="Instagram" class="social-icon">
+          <img src="src/assets/images/linkedin.svg" alt="LinkedIn" class="social-icon">
+          <img src="src/assets/images/fiverr.svg" alt="Fiverr" class="social-icon">
+        </div>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <small>&copy; 2024 <b>WebCloud Labs</b> - Todos los Derechos Reservados.</small>
+    </div>
+  </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
         duration:1000,
       })
     </script>
+    <script src="scripts.js"></script>
   </body>
 </html>

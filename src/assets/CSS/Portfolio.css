@@ -1,51 +1,160 @@
+/* Estilos generales */
+
+
 .Portfolio {
-    display: flex;
-    max-width: 1700px;
-    font-family: Helvetica, Arial, sans-serif;
-    flex-wrap: wrap; /* Permite mejor diseño responsivo */
-    gap: 20px; /* Espaciado entre proyectos */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: white;
 }
 
-.proyecto {
-    display: flex;
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 0 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+}
+
+.intro-container h1 {
+  flex: 1;
+  color: #333;
+  font-size: 3.6rem;
+  text-align: left;
+  margin: 0;
+}
+
+.intro-container .intro-portfolio {
+  flex: 2;
+  font-size: 1rem;
+  color: black;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0;
+}
+
+.highlight{
+  background-color: #ff6347;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+}
+
+
+
+.thumbnail {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+.thumbnail img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumbnail h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.thumbnail:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-details h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+  padding-top: 10px;
+}
+
+.project-details h4 {
+  font-size: 1.1rem;
+  color: #555;
+  padding-top: 10px;
+}
+
+.project-details p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.italic {
+  font-style: italic;
+  font-size: 16px;
+}
+
+
+
+/* Media Queries */
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .intro-container {
     flex-direction: column;
-    width: calc(50% - 20px); /* Ajusta dinámicamente en base al contenedor */
-    align-items: center;
     text-align: center;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .intro-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .intro-container .intro-portfolio {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .gallery {
+    gap: 15px;
+  }
 }
 
-.Portfolio img {
-    width: 100%;
-    max-width: 700px;
-    height: auto; /* Mantiene proporción de la imagen */
-    margin-bottom: 20px; /* Espaciado con el texto */
-    padding-top: 35px;
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .intro-container h1 {
+    font-size: 2rem;
+  }
+
+  .intro-container .intro-portfolio {
+    font-size: 0.8rem;
+    padding: 0 10px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
 
-.py1 {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 20px; /* Más legible */
-    width: 100%; /* Alinea con el contenedor */
-}
-
-.py1 h1 {
-    font-size: 45px;
-    margin-bottom: 10px;
-    font-weight: 300; /* Grosor delgado */
-}
-
-.py1 p {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-top: 10px;
-}
-
-.py1 h2 {
-    font-style: italic;
-    font-size: 12;
-    font-weight: 400;
-    color: grey;
-    margin-top: 20px;
-    padding-left: 150px;
+  .project-details p {
+    font-size: 0.8rem;
+  }
 }
