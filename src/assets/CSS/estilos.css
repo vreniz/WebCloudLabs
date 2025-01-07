@@ -146,6 +146,8 @@ header nav ul li a:focus {
   width: 550px;
   height: 545px;
   margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px; /* Espacio entre la imagen y el borde derecho */
   overflow-x: auto; /* Permitir scroll horizontal */
   white-space: nowrap; /* Prevenir que el contenido se ajuste a nuevas líneas */
   flex-shrink: 0; /* Prevenir que la imagen se reduzca en pantallas pequeñas */
@@ -171,7 +173,7 @@ header nav ul li a:focus {
   overflow-y: hidden; /* Opcional: evitar scroll vertical innecesario */
 }
 
-.main-banner:after {
+/*.main-banner:after {
   content: "";
   background-image: url(../images/baner-dec-left.png);
   background-size: 150px 300px;
@@ -181,9 +183,9 @@ header nav ul li a:focus {
   top: 0px;
   width: 100%;
   height: 100%;
-}
+}*/
 
-.main-banner:before {
+ /* .main-banner:before {
   content: "";
   background-image: url(../images/baner-dec-right.png);
   background-size: 160px 300px;
@@ -193,9 +195,10 @@ header nav ul li a:focus {
   top: 0px;
   width: 350px;
   height: 305px;
-  z-index: 1; /* Asegura que esté encima del contenido pero detrás de otros elementos */
-  pointer-events: none; /* Asegura que no interfiera con la interacción */
-}
+  z-index: 1; 
+  pointer-events: none; 
+  
+}*/
 
 .main-banner .container {
   display: flex;
