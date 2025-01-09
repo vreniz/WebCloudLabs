@@ -1,6 +1,11 @@
 /* Contenedor principal */
 .contenedor_price {
     background-color: #100D28;
+    border-radius: 27px; /* Bordes redondeados opcionales */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Centrado horizontal */
+    max-width: 90%; /* Evita que sea demasiado ancho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar el contenedor */
 }
 
 /* Texto dentro de contenedor_price */
@@ -33,10 +38,10 @@
 
 /* Subtítulo */
 .subtitle {
-    font-size: 45px;
-    padding-left: 135px;
-    padding-top: 80px;
+    font-size: 45px; /* Tamaño inicial */
+    padding-top: 80px; /* Espaciado inicial */
     color: white;
+    text-align: center; /* Centrar en pantallas pequeñas */
 }
 
 /* Tablas de precios */
