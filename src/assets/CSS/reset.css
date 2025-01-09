@@ -1,3 +1,4 @@
+/* Reset de estilos */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,26 +19,111 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* Header fijo */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	background-color: rgba(16, 13, 40, 0.8);
+	box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenido principal ajustado para el header */
+.site-content {
+	margin-top: 80px;
+}
+
+/* Estilos generales del menú lateral */
+.main-content.shifted {
+	transform: translateX(300px);
+	transition: transform 0.3s ease;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 1000px) {
+  .menu-toggle {
+    display: block;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Mueve el botón hamburguesa a la derecha */
+    z-index: 1100;
+  }
+
+  header nav ul {
+    position: fixed;
+    top: 80px; /* Justo debajo del header */
+    right: -300px; /* Oculto inicialmente */
+    width: 240px;
+    background-color: rgba(16, 13, 40, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    z-index: 1000;
+    transition: right 0.3s ease;
+  }
+
+  header nav ul.show {
+    right: 20px; /* Posiciona correctamente el menú al mostrarlo */
+  }
+
+  header nav ul li {
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  header nav ul li a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+
+  header nav ul li:last-child a {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+  }
 }
