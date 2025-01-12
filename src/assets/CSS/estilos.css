@@ -55,8 +55,7 @@ html header { /* color y ajustes barra de navegación */
   background-size: contain;
   background-repeat: no-repeat;
   transition: background-image 0.3s ease, transform 0.3s ease;
-  margin-left: 35px;
-  vertical-align: middle;
+  margin-right: -10px;
 }
 
 .ihouse:hover {
