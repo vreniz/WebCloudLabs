@@ -18,6 +18,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  scroll-behavior: smooth;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -95,7 +96,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Alinea el contenido a la izquierda */
-    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    text-align: center; /* Asegura que el texto esté alineado a la izquierda */
     z-index: 1000;
     transition: right 0.3s ease;
   }
@@ -107,6 +108,8 @@ header {
   header nav ul li {
     margin: 15px 0;
     width: 100%;
+    margin-left: 30px;
+
   }
 
   header nav ul li a {

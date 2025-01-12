@@ -9,6 +9,7 @@ body {
   font-weight: 400;
   background-color: #fff;
   overflow-x: auto; /* Permitir desplazamiento horizontal */
+  scroll-behavior: smooth;
 }
 
 p {
