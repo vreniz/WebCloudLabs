@@ -41,6 +41,29 @@ html header { /* color y ajustes barra de navegación */
   margin-right: -4px; /* Añade espacio entre la imagen y el texto */
 
 }
+.ihouse {
+  font-size: 32px; /* Ajusta el tamaño aquí */
+  position: relative; /* Permite mover el elemento */ 
+  top: 1px; /* Ajusta hacia arriba (usa un valor negativo) */
+  width: 1px;
+}
+.ihouse {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url('../images/white2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s ease, transform 0.3s ease;
+  margin-left: 35px;
+  vertical-align: middle;
+}
+
+.ihouse:hover {
+  background-image: url('../images/orange2.png');
+  transform: scale(1.1); /* Opcional: zoom al pasar el mouse */
+}
+
 
 
 html header div:first-child {
