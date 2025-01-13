@@ -99,6 +99,8 @@ header {
     text-align: center; /* Asegura que el texto esté alineado a la izquierda */
     z-index: 1000;
     transition: right 0.3s ease;
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+	  max-height: 70vh; /* Limita la altura del menú */
   }
 
   header nav ul.show {
@@ -137,6 +139,9 @@ header {
 
 
 @media (max-width: 768px) {
+  header nav ul {
+    overflow-y: auto; /* Habilita el scroll vertical si es necesario */
+  }
   /* Evitar desbordamientos horizontales */
   body {
     overflow-x: hidden;
@@ -207,6 +212,9 @@ header {
 }
 
 @media (max-width: 480px) {
+  header nav ul {
+    overflow-y: auto; /* Habilita el scroll vertical si es necesario */
+  }
   body {
     overflow-x: hidden; /* Evita el desplazamiento horizontal en pantallas muy pequeñas */
   }
@@ -224,3 +232,5 @@ header {
     font-size: 12px;
   }
 }
+
+
