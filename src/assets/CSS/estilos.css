@@ -62,7 +62,10 @@ html header { /* color y ajustes barra de navegación */
   background-image: url('../images/orange2.png');
   transform: scale(1.1); /* Opcional: zoom al pasar el mouse */
 }
-
+.ihouse.active {
+  background-image: url('../images/orange2.png'); /* Imagen resaltada */
+  transform: scale(1.1); /* Opcional: zoom */
+}
 
 
 html header div:first-child {
@@ -103,6 +106,9 @@ html header nav ul {
 
 html header nav ul li {
   margin-right: 35px;
+}
+header nav ul li a.active {
+  color: #fe3f40; /* Cambia a naranja */
 }
 
 html header nav ul li:last-child {
