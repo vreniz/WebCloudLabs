@@ -44,8 +44,7 @@ html header { /* color y ajustes barra de navegación */
 .ihouse {
   font-size: 32px; /* Ajusta el tamaño aquí */
   position: relative; /* Permite mover el elemento */ 
-  top: 1px; /* Ajusta hacia arriba (usa un valor negativo) */
-  width: 1px;
+ 
 }
 .ihouse {
   display: inline-block;
@@ -619,3 +618,92 @@ footer div p a {
   text-decoration: none;
 }
 
+  /* esto fue lo que agregue para responsive 12/01/2025 */
+@media (max-width: 768px) {
+  /* Evitar desbordamientos horizontales */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Ajusta el contenedor principal */
+  .main-banner .container {
+    flex-direction: column; /* Cambia de fila a columna */
+    align-items: center; /* Centra los elementos */
+    padding: 20px; /* Espacio alrededor */
+    text-align: center; /* Centra el texto */
+  }
+
+  /* Contenido izquierdo (texto) */
+  .left-content {
+    width: 100%; /* Ocupa todo el ancho */
+    margin: 0; /* Elimina márgenes */
+  }
+
+  .left-content h6 {
+    font-size: 14px; /* Ajusta el tamaño */
+    margin-bottom: 10px; /* Espacio debajo */
+  }
+
+  .left-content h2 {
+    font-size: 24px; /* Reduce el tamaño */
+    line-height: 36px; /* Espaciado entre líneas */
+    margin-bottom: 15px; /* Espacio debajo */
+  }
+
+  .left-content ul {
+    padding: 0;
+    margin: 15px 0; /* Ajusta el espacio superior/inferior */
+  }
+
+  .left-content ul li {
+    font-size: 14px; /* Reduce el tamaño */
+    margin-bottom: 10px; /* Espaciado entre ítems */
+  }
+
+  .left-content ul li .emoji {
+    font-size: 18px; /* Ajusta el tamaño del emoji */
+    margin-right: 5px; /* Espaciado con el texto */
+  }
+
+  .left-content h1.cus-message {
+    font-size: 14px; /* Reduce el tamaño */
+    margin-top: 15px;
+    line-height: 20px; /* Ajusta el espaciado entre líneas */
+  }
+
+  .left-content h1.cus-message .emoji {
+    font-size: 24px; /* Ajusta el tamaño del emoji */
+    margin-right: 10px;
+  }
+
+  /* Contenido derecho (imagen) */
+  .right-content {
+    margin-top: 20px; /* Espacio superior */
+    width: 100%; /* Ocupa todo el ancho */
+    text-align: center; /* Centra la imagen */
+  }
+
+  .styled-image {
+    width: 70%; /* Ajusta el tamaño relativo */
+    height: auto; /* Mantiene la proporción */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden; /* Evita el desplazamiento horizontal en pantallas muy pequeñas */
+  }
+
+  .left-content h2 {
+    font-size: 20px; /* Reduce aún más el tamaño */
+    line-height: 32px;
+  }
+
+  .left-content ul li {
+    font-size: 12px; /* Ajusta el texto para pantallas muy pequeñas */
+  }
+
+  .left-content h1.cus-message {
+    font-size: 12px;
+  }
+}
